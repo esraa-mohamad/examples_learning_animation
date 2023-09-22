@@ -31,6 +31,7 @@ class _MovementAnimatedAlignState extends State<MovementAnimatedAlign> {
       body: Stack(
         children: [
           AnimatedAlign(
+            curve: Curves.easeInCirc,
               alignment: getGeryAlignment(tomAligned),
               duration: const Duration(microseconds: 350),
             child: Container(
@@ -41,6 +42,7 @@ class _MovementAnimatedAlignState extends State<MovementAnimatedAlign> {
             ),
           ),
           AnimatedAlign(
+            curve: Curves.linear,
             alignment: getTomAlignment(tomAligned),
             duration: const Duration(microseconds: 500),
             child: Container(

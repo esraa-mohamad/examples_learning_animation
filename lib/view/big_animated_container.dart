@@ -64,6 +64,7 @@ class _BigAnimatedContainerState extends State<BigAnimatedContainer> {
         child: GestureDetector(
           onTap: setAnimationValue,
           child: AnimatedContainer(
+            curve: Curves.easeInCubic,
             width: width,
             height: height,
             padding:  const EdgeInsets.all(18),
