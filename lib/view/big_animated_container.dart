@@ -55,7 +55,7 @@ class _BigAnimatedContainerState extends State<BigAnimatedContainer> {
           style: TextStyle(
             color: Colors.amber,
             fontWeight: FontWeight.bold,
-            fontSize: 30,
+            fontSize: 20,
           ),
         ),
         centerTitle: true,
