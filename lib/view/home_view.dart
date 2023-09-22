@@ -1,4 +1,5 @@
 import 'package:examples_animation/view/big_animated_container.dart';
+import 'package:examples_animation/view/change_animated_padding.dart';
 import 'package:examples_animation/view/movement_animated_align.dart';
 import 'package:examples_animation/view/see_animated_opacityy.dart';
 import 'package:examples_animation/view/text_animated_demo.dart';
@@ -44,6 +45,10 @@ class HomeView extends StatelessWidget {
             ButtonElevated(
                 title: 'See Animated Opacity',
                 page: SeeAnimatedOpacity()
+            ),
+            ButtonElevated(
+                title: 'Change Animated Padding',
+                page: ChangeAnimatedPadding()
             ),
           ],
         ),

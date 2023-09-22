@@ -12,7 +12,6 @@ class ButtonElevated extends StatelessWidget {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.all(12),
-            backgroundColor: Colors.blueGrey,
             shadowColor: Colors.purpleAccent,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15)
@@ -27,7 +26,7 @@ class ButtonElevated extends StatelessWidget {
           title,
           textAlign: TextAlign.center,
           style: const TextStyle(
-            color: Colors.deepPurple,
+            color: Colors.amber,
             fontSize: 25,
             fontWeight: FontWeight.bold,
           ),
