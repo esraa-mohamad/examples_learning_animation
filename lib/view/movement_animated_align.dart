@@ -1,4 +1,3 @@
-// movement photos
 import 'package:flutter/material.dart';
 
 class MovementAnimatedAlign extends StatefulWidget {
@@ -10,17 +9,21 @@ class MovementAnimatedAlign extends StatefulWidget {
 
 class _MovementAnimatedAlignState extends State<MovementAnimatedAlign> {
 
-    int geryAndTomAligned=0;
+    int geryAligned=0;
+
+    int tomAligned =0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        automaticallyImplyLeading: false,
+        title:  const Text(
           'Movement Animated Align',
           style: TextStyle(
-            fontSize: 25,
+            color: Colors.amber,
             fontWeight: FontWeight.bold,
-            color: Colors.black
+            fontSize: 30,
           ),
         ),
         centerTitle: true,
@@ -28,7 +31,7 @@ class _MovementAnimatedAlignState extends State<MovementAnimatedAlign> {
       body: Stack(
         children: [
           AnimatedAlign(
-              alignment: getGeryAndTomAlignment(geryAndTomAligned),
+              alignment: getGeryAlignment(tomAligned),
               duration: const Duration(microseconds: 350),
             child: Container(
               color: Colors.transparent,
@@ -38,7 +41,7 @@ class _MovementAnimatedAlignState extends State<MovementAnimatedAlign> {
             ),
           ),
           AnimatedAlign(
-            alignment: getGeryAndTomAlignment(geryAndTomAligned+1),
+            alignment: getTomAlignment(tomAligned),
             duration: const Duration(microseconds: 500),
             child: Container(
               color: Colors.transparent,
@@ -52,7 +55,8 @@ class _MovementAnimatedAlignState extends State<MovementAnimatedAlign> {
       floatingActionButton: FloatingActionButton(
         onPressed: (){
           setState(() {
-            geryAndTomAligned=geryAndTomAligned+1;
+            geryAligned=geryAligned+1;
+            tomAligned=tomAligned+1;
           });
         },
         child: const Icon(
@@ -64,7 +68,7 @@ class _MovementAnimatedAlignState extends State<MovementAnimatedAlign> {
     );
   }
 
-  Alignment getGeryAndTomAlignment(int aligned)
+  Alignment getGeryAlignment(int aligned)
   {
     switch(aligned){
       case 1 :
@@ -78,17 +82,46 @@ class _MovementAnimatedAlignState extends State<MovementAnimatedAlign> {
       case 5 :
         return Alignment.bottomLeft;
       case 6 :
-        return Alignment.center;
+        return Alignment.centerRight;
       case 7 :
         return Alignment.centerLeft;
       case 8 :
-        return Alignment.centerRight;
+        return Alignment.center;
       default :
-        geryAndTomAligned = 0;
+        geryAligned = 0;
         return Alignment.topRight;
     }
-    
+    // gery
+     // 0 : top right , 1 : top center , 2 : bottom right , 3: top left , 4 : bottom center
+    // 5: bottom left , 6 center right , 7: center left , 8: center
+
   }
+     // tom
+    // 1: top right , 2: top center , 3: bottom right , 4: top left , 5: bottom center
+   // 6: bottom left , 7: center right , 8:center , 0: center left
+    Alignment getTomAlignment(int aligned) {
+      switch (aligned) {
+        case 1 :
+          return Alignment.topRight;
+        case 2 :
+          return Alignment.topCenter;
+        case 3 :
+          return Alignment.bottomRight;
+        case 4 :
+          return Alignment.topLeft;
+        case 5 :
+          return Alignment.bottomCenter;
+        case 6 :
+          return Alignment.bottomLeft;
+        case 7 :
+          return Alignment.centerRight;
+        case 8 :
+          return Alignment.center;
+        default :
+          tomAligned = 0;
+          return Alignment.centerLeft;
+      }
+    }
 
 
 }

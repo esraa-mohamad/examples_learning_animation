@@ -7,27 +7,30 @@ class ButtonElevated extends StatelessWidget {
   final Widget page ;
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.all(12),
-          backgroundColor: Colors.blueGrey,
-          shadowColor: Colors.purpleAccent,
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15)
-          )
-      ),
-      onPressed: (){
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (context)=>page)
-        );
-      },
-      child:  Text(
-        title,
-        textAlign: TextAlign.center,
-        style: const TextStyle(
-          color: Colors.deepPurple,
-          fontSize: 25,
-          fontWeight: FontWeight.bold,
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(0,0,0,25),
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.all(12),
+            backgroundColor: Colors.blueGrey,
+            shadowColor: Colors.purpleAccent,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15)
+            )
+        ),
+        onPressed: (){
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context)=>page)
+          );
+        },
+        child:  Text(
+          title,
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            color: Colors.deepPurple,
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );

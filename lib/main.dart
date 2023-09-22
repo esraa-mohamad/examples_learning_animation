@@ -1,5 +1,4 @@
 import 'package:examples_animation/view/home_view.dart';
-import 'package:examples_animation/view/movement_animated_align.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,9 +11,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
      debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      theme: ThemeData(
+        primarySwatch: Colors.blueGrey
+      ),
+      home: const HomeView(),
     );
   }
 }
