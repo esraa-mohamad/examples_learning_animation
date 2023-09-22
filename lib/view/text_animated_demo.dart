@@ -54,7 +54,7 @@ class _TextAnimatedDemoState extends State<TextAnimatedDemo> {
                 fontWeight: FontWeight.bold,
                 color: colorText,
               ),
-              duration: const Duration(microseconds: 400),
+              duration: const Duration(milliseconds: 400),
               child: const Text(
                 'My Name is Esraa Mohamed',
                 textAlign: TextAlign.center,

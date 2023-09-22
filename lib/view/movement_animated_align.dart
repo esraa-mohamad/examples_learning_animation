@@ -33,7 +33,7 @@ class _MovementAnimatedAlignState extends State<MovementAnimatedAlign> {
           AnimatedAlign(
             curve: Curves.easeInCirc,
               alignment: getGeryAlignment(tomAligned),
-              duration: const Duration(microseconds: 350),
+              duration: const Duration(milliseconds: 350),
             child: Container(
               color: Colors.transparent,
               width: 100,

@@ -68,7 +68,7 @@ class _BigAnimatedContainerState extends State<BigAnimatedContainer> {
             width: width,
             height: height,
             padding:  const EdgeInsets.all(18),
-            duration: const Duration(microseconds: 350),
+            duration: const Duration(milliseconds: 350),
             decoration: BoxDecoration(
               color: colorBox,
               borderRadius: BorderRadius.circular(radius),
