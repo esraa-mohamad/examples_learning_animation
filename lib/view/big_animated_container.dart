@@ -13,7 +13,7 @@ class _BigAnimatedContainerState extends State<BigAnimatedContainer> {
 
   String titleImage = 'assets/images/gery.png';
 
-  double radius = 16;
+  double radius = 25;
 
   double width = 200 ;
 
@@ -26,7 +26,7 @@ class _BigAnimatedContainerState extends State<BigAnimatedContainer> {
       titleImage = 'assets/images/tom.png';
       width = 350;
       height = 350 ;
-      radius = 25 ;
+      radius = 50 ;
     });
   }
 
@@ -37,7 +37,7 @@ class _BigAnimatedContainerState extends State<BigAnimatedContainer> {
 
       titleImage = 'assets/images/gery.png';
 
-      radius = 16;
+      radius = 25;
 
       width = 200 ;
 
@@ -66,11 +66,11 @@ class _BigAnimatedContainerState extends State<BigAnimatedContainer> {
           child: AnimatedContainer(
             width: width,
             height: height,
-            padding:  EdgeInsets.all(radius),
+            padding:  const EdgeInsets.all(18),
             duration: const Duration(microseconds: 350),
             decoration: BoxDecoration(
               color: colorBox,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(radius),
             ),
             child: Image.asset(titleImage),
           ),
