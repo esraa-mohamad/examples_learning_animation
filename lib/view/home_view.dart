@@ -1,4 +1,5 @@
 import 'package:examples_animation/view/big_animated_container.dart';
+import 'package:examples_animation/view/change_animated_direction.dart';
 import 'package:examples_animation/view/change_animated_padding.dart';
 import 'package:examples_animation/view/change_animated_position.dart';
 import 'package:examples_animation/view/model_animated_physical.dart';
@@ -60,6 +61,10 @@ class HomeView extends StatelessWidget {
             ButtonElevated(
                 title: 'Change Animated Position',
                 page: ChangeAnimatedPosition()
+            ),
+            ButtonElevated(
+                title: 'Change Animated Direction',
+                page: ChangeAnimatedDirection()
             ),
           ],
         ),
