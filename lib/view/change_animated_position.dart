@@ -104,6 +104,7 @@ class _ChangeAnimatedPositionState extends State<ChangeAnimatedPosition> {
             startEating = !startEating;
           });
         },
+
         child:  Icon(
           startEating ?
           Icons.place :
