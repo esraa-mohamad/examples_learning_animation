@@ -1,4 +1,5 @@
 import 'package:examples_animation/view/big_animated_container.dart';
+import 'package:examples_animation/view/change_animated_crossfade.dart';
 import 'package:examples_animation/view/change_animated_direction.dart';
 import 'package:examples_animation/view/change_animated_padding.dart';
 import 'package:examples_animation/view/change_animated_position.dart';
@@ -65,6 +66,10 @@ class HomeView extends StatelessWidget {
             ButtonElevated(
                 title: 'Change Animated Direction',
                 page: ChangeAnimatedDirection()
+            ),
+            ButtonElevated(
+                title: 'Change Animated CrossFade',
+                page: ChangeAnimatedCrossFade()
             ),
           ],
         ),
