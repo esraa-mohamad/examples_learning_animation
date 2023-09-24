@@ -1,3 +1,4 @@
+import 'package:examples_animation/view/add_animated_list.dart';
 import 'package:examples_animation/view/big_animated_container.dart';
 import 'package:examples_animation/view/change_animated_crossfade.dart';
 import 'package:examples_animation/view/change_animated_direction.dart';
@@ -75,6 +76,10 @@ class HomeView extends StatelessWidget {
             ButtonElevated(
                 title: 'Switch Animated Switcher',
                 page: SwitchAnimatedSwitcher()
+            ),
+            ButtonElevated(
+                title: 'Add Animated List',
+                page: AddAnimatedList()
             ),
           ],
         ),
