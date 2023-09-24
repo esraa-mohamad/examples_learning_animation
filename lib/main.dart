@@ -1,4 +1,4 @@
-import 'package:examples_animation/view/home_view.dart';
+import 'package:examples_animation/view/Implicit_Animation/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {

@@ -8,7 +8,7 @@ class ButtonElevated extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(0,0,0,20),
+      padding: const EdgeInsets.fromLTRB(0,0,0,18),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.all(8),
@@ -27,7 +27,7 @@ class ButtonElevated extends StatelessWidget {
           textAlign: TextAlign.center,
           style: const TextStyle(
             color: Colors.amber,
-            fontSize: 22,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),

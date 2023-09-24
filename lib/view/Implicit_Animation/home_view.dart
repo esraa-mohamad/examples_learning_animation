@@ -1,17 +1,16 @@
-import 'package:examples_animation/view/add_animated_list.dart';
-import 'package:examples_animation/view/big_animated_container.dart';
-import 'package:examples_animation/view/change_animated_crossfade.dart';
-import 'package:examples_animation/view/change_animated_direction.dart';
-import 'package:examples_animation/view/change_animated_padding.dart';
-import 'package:examples_animation/view/change_animated_position.dart';
-import 'package:examples_animation/view/model_animated_physical.dart';
-import 'package:examples_animation/view/movement_animated_align.dart';
-import 'package:examples_animation/view/see_animated_opacity.dart';
-import 'package:examples_animation/view/switch_animated_switcher.dart';
-import 'package:examples_animation/view/text_animated_demo.dart';
 import 'package:flutter/material.dart';
-
-import '../widget/button.dart';
+import '../../widget/button.dart';
+import 'add_animated_list.dart';
+import 'big_animated_container.dart';
+import 'change_animated_crossfade.dart';
+import 'change_animated_direction.dart';
+import 'change_animated_padding.dart';
+import 'change_animated_position.dart';
+import 'model_animated_physical.dart';
+import 'movement_animated_align.dart';
+import 'see_animated_opacity.dart';
+import 'switch_animated_switcher.dart';
+import 'text_animated_demo.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -22,7 +21,7 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title:  const Text(
-          'Animation',
+          'Implicit Animation',
           style: TextStyle(
             color: Colors.amber,
             fontWeight: FontWeight.bold,
