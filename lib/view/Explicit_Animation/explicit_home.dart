@@ -1,4 +1,5 @@
 import 'package:examples_animation/view/Explicit_Animation/position_transition_ex.dart';
+import 'package:examples_animation/view/Explicit_Animation/rotation_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/size_transition_ex.dart';
 import 'package:examples_animation/widget/second_button.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +39,10 @@ class _ExplicitHomeViewState extends State<ExplicitHomeView> {
             SecondButtonElevated(
                 title: 'Size Transition Example',
                 page: SizeTransitionExample()
+            ),
+            SecondButtonElevated(
+                title: 'Rotation Transition Example',
+                page: RotationTransitionExample()
             ),
           ],
         ),
