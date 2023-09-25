@@ -1,3 +1,4 @@
+import 'package:examples_animation/view/Explicit_Animation/explicit_home.dart';
 import 'package:examples_animation/view/Implicit_Animation/home_view.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey
       ),
-      home: const HomeView(),
+      home: const ExplicitHomeView(),
     );
   }
 }
