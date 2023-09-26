@@ -1,6 +1,7 @@
 import 'package:examples_animation/view/Explicit_Animation/animated_builder_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/fade_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/position_transition_ex.dart';
+import 'package:examples_animation/view/Explicit_Animation/positioned_directional_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/rotation_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/size_transition_ex.dart';
 import 'package:examples_animation/widget/second_button.dart';
@@ -53,6 +54,10 @@ class _ExplicitHomeViewState extends State<ExplicitHomeView> {
             SecondButtonElevated(
                 title: 'Fade Transition Example',
                 page: FadeTransitionExample()
+            ),
+            SecondButtonElevated(
+                title: 'Positioned Directional Transition Example',
+                page: PositionedDirectionalTransitionExample()
             ),
           ],
         ),
