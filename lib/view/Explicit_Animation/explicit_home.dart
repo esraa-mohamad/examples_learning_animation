@@ -1,3 +1,4 @@
+import 'package:examples_animation/view/Explicit_Animation/animated_builder_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/position_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/rotation_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/size_transition_ex.dart';
@@ -43,6 +44,10 @@ class _ExplicitHomeViewState extends State<ExplicitHomeView> {
             SecondButtonElevated(
                 title: 'Rotation Transition Example',
                 page: RotationTransitionExample()
+            ),
+            SecondButtonElevated(
+                title: 'Animated Builder Example',
+                page: AnimatedBuilderExample()
             ),
           ],
         ),
