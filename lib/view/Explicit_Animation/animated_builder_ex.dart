@@ -12,7 +12,6 @@ class AnimatedBuilderExample extends  StatefulWidget {
 class _AnimatedBuilderExampleState extends State<AnimatedBuilderExample> with SingleTickerProviderStateMixin {
 
   late  AnimationController controller ;
-  late Animation<RelativeRect> girlAnimation ;
 
 @override
   void initState() {
@@ -27,12 +26,6 @@ class _AnimatedBuilderExampleState extends State<AnimatedBuilderExample> with Si
     );
   }
 
-  moveAnimation()
-  {
-    setState(() {
-
-    });
-  }
 
   @override
   void dispose() {
