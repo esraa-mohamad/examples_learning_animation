@@ -4,6 +4,7 @@ import 'package:examples_animation/view/Explicit_Animation/position_transition_e
 import 'package:examples_animation/view/Explicit_Animation/positioned_directional_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/rotation_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/size_transition_ex.dart';
+import 'package:examples_animation/view/Explicit_Animation/tween_animation_builder_ex.dart';
 import 'package:examples_animation/widget/second_button.dart';
 import 'package:flutter/material.dart';
 
@@ -58,6 +59,10 @@ class _ExplicitHomeViewState extends State<ExplicitHomeView> {
             SecondButtonElevated(
                 title: 'Positioned Directional Transition Example',
                 page: PositionedDirectionalTransitionExample()
+            ),
+            SecondButtonElevated(
+                title: 'Tween Animation Builder Example',
+                page: TweenAnimationBuilderExample()
             ),
           ],
         ),
