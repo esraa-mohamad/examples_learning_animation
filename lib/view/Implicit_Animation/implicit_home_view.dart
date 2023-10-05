@@ -12,14 +12,15 @@ import 'see_animated_opacity.dart';
 import 'switch_animated_switcher.dart';
 import 'text_animated_demo.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class ImplicitHomeView extends StatelessWidget {
+  const ImplicitHomeView({super.key});
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title:  const Text(
           'Implicit Animation',
           style: TextStyle(

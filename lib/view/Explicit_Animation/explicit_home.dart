@@ -22,6 +22,7 @@ class _ExplicitHomeViewState extends State<ExplicitHomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:  AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: const Color(0xff5EE8D1),
         title:  const Text(
           'Explicit Animation',
