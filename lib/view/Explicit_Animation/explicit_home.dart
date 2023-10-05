@@ -1,4 +1,5 @@
 import 'package:examples_animation/view/Explicit_Animation/animated_builder_ex.dart';
+import 'package:examples_animation/view/Explicit_Animation/default_textstyle_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/fade_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/position_transition_ex.dart';
 import 'package:examples_animation/view/Explicit_Animation/positioned_directional_transition_ex.dart';
@@ -63,6 +64,10 @@ class _ExplicitHomeViewState extends State<ExplicitHomeView> {
             SecondButtonElevated(
                 title: 'Tween Animation Builder Example',
                 page: TweenAnimationBuilderExample()
+            ),
+            SecondButtonElevated(
+                title: 'Default TextStyle Transition Example',
+                page: DefaultTextStyleTransitionExample()
             ),
           ],
         ),
