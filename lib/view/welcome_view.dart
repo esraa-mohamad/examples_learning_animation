@@ -1,6 +1,7 @@
 import 'package:animated_background/animated_background.dart';
 import 'package:examples_animation/view/Explicit_Animation/explicit_home.dart';
 import 'package:examples_animation/view/Implicit_Animation/implicit_home_view.dart';
+import 'package:examples_animation/view/page_transition_animation/page_transition_view.dart';
 import 'package:examples_animation/widget/second_button.dart';
 import 'package:flutter/material.dart';
 
@@ -61,6 +62,12 @@ class _WelcomeViewState extends State<WelcomeView>  with SingleTickerProviderSta
               SecondButtonElevated(
                 title: 'Explicit Animation Home',
                 page: const ExplicitHomeView(),
+                colorButton:   backColor,
+                colorText: colorText,
+              ),
+              SecondButtonElevated(
+                title: 'Page Transition Animation Home',
+                page: const PageTransitionHomeView(),
                 colorButton:   backColor,
                 colorText: colorText,
               ),
