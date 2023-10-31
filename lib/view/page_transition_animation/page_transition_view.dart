@@ -1,7 +1,7 @@
 import 'package:examples_animation/view/page_transition_animation/animation_componants/page_fade_transition_component.dart';
+import 'package:examples_animation/view/page_transition_animation/animation_componants/page_rotation_componant.dart';
 import 'package:examples_animation/view/page_transition_animation/animation_componants/page_scale_transition_component.dart';
-import 'package:examples_animation/view/page_transition_animation/page_fade_ex.dart';
-import 'package:examples_animation/view/page_transition_animation/page_scale_ex.dart';
+import 'package:examples_animation/view/page_transition_animation/page_transition_example.dart';
 import 'package:flutter/material.dart';
 import '../../components/const.dart';
 import '../../widget/third_button.dart';
@@ -36,7 +36,7 @@ class PageTransitionHomeView extends StatelessWidget {
                 title: 'Page Fade Example',
                 page: (){
                   Navigator.of(context).push(PageFadeTransitionComponent(
-                      page:const PageFadeExample())
+                      page:const PageTransitionExample())
                   );
                 },
             ),
@@ -44,7 +44,15 @@ class PageTransitionHomeView extends StatelessWidget {
                title: 'Page Scale Example',
                page: (){
                  Navigator.of(context).push(PageScaleTransitionComponent(
-                     page:const PageScaleExample())
+                     page:const PageTransitionExample())
+                 );
+               },
+             ),
+              ThirdButtonElevated(
+               title: 'Page Rotation Example',
+               page: (){
+                 Navigator.of(context).push(PageRotationTransitionComponent(
+                     page:const PageTransitionExample())
                  );
                },
              ),

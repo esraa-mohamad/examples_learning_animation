@@ -1,14 +1,10 @@
-import 'package:examples_animation/components/const.dart';
 import 'package:flutter/material.dart';
 
-class PageFadeExample extends StatefulWidget {
-  const PageFadeExample({super.key});
+import '../../components/const.dart';
 
-  @override
-  State<PageFadeExample> createState() => _PageFadeExampleState();
-}
+class PageTransitionExample extends StatelessWidget {
+  const PageTransitionExample({super.key});
 
-class _PageFadeExampleState extends State<PageFadeExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +12,7 @@ class _PageFadeExampleState extends State<PageFadeExample> {
         automaticallyImplyLeading: false,
         backgroundColor: pinkColor,
         title:  const Text(
-          'Page Fade Example',
+          'Page Transition Example',
           style: TextStyle(
             color: grayColor,
             fontWeight: FontWeight.bold,
