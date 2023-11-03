@@ -4,6 +4,7 @@ import '../../components/const.dart';
 import '../../widget/third_button.dart';
 import 'animation_components/page_fade_transition_component.dart';
 import 'animation_components/page_mix_fade_size_components.dart';
+import 'animation_components/page_mix_scale_rotate_components.dart';
 import 'animation_components/page_rotation_component.dart';
 import 'animation_components/page_scale_transition_component.dart';
 import 'animation_components/page_size_components.dart';
@@ -73,6 +74,14 @@ class PageTransitionHomeView extends StatelessWidget {
             title: 'Page Mix Fade Size  Example',
             page: () {
               Navigator.of(context).push(PageMixFadeSizeTransitionComponent(
+                  page: const PageTransitionExample()));
+            },
+
+          ),
+          ThirdButtonElevated(
+            title: 'Page Mix Scale Rotate  Example',
+            page: () {
+              Navigator.of(context).push(PageMixScaleRotateTransitionComponent(
                   page: const PageTransitionExample()));
             },
 
