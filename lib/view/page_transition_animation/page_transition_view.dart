@@ -5,6 +5,7 @@ import '../../widget/third_button.dart';
 import 'animation_components/page_fade_transition_component.dart';
 import 'animation_components/page_rotation_component.dart';
 import 'animation_components/page_scale_transition_component.dart';
+import 'animation_components/page_size_components.dart';
 import 'animation_components/page_slide_components.dart';
 
 class PageTransitionHomeView extends StatelessWidget {
@@ -59,6 +60,15 @@ class PageTransitionHomeView extends StatelessWidget {
             },
 
           ),
+          ThirdButtonElevated(
+            title: 'Page Size Example',
+            page: () {
+              Navigator.of(context).push(PageSizeTransitionComponent(
+                  page: const PageTransitionExample()));
+            },
+
+          ),
+
         ]),
       ),
     );

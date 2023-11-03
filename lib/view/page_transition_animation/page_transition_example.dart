@@ -8,6 +8,7 @@ class PageTransitionExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pinkAccent[100],
       appBar:  AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: pinkColor,
