@@ -1,9 +1,8 @@
 import 'package:examples_animation/view/More_Animation/custom_paint_animation_example.dart';
-import 'package:examples_animation/view/page_transition_animation/page_transition_example.dart';
 import 'package:examples_animation/widget/second_button.dart';
 import 'package:flutter/material.dart';
 import '../../components/const.dart';
-import '../../widget/third_button.dart';
+import 'lotti_animation_ex.dart';
 
 class MoreAnimationView extends StatelessWidget {
   const MoreAnimationView({super.key});
@@ -34,6 +33,12 @@ class MoreAnimationView extends StatelessWidget {
                   page: CustomPaintAnimationExample(),
                   colorButton: orangeColor,
                   colorText: blackColor,
+              ),
+              SecondButtonElevated(
+                title: 'Lotti Animation Example',
+                page: LottiAnimationExample(),
+                colorButton: orangeColor,
+                colorText: blackColor,
               ),
             ]
         ),
