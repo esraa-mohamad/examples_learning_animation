@@ -1,4 +1,5 @@
 import 'package:examples_animation/view/More_Animation/custom_paint_animation_example.dart';
+import 'package:examples_animation/view/More_Animation/rive_flare_animation_ex.dart';
 import 'package:examples_animation/widget/second_button.dart';
 import 'package:flutter/material.dart';
 import '../../components/const.dart';
@@ -37,6 +38,12 @@ class MoreAnimationView extends StatelessWidget {
               SecondButtonElevated(
                 title: 'Lotti Animation Example',
                 page: LottiAnimationExample(),
+                colorButton: orangeColor,
+                colorText: blackColor,
+              ),
+              SecondButtonElevated(
+                title: 'Rive (Flare) Example',
+                page: RiveFlareAnimationExample(),
                 colorButton: orangeColor,
                 colorText: blackColor,
               ),
