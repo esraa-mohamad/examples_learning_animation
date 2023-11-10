@@ -116,21 +116,21 @@ class _RiveFlareAnimationExampleState extends State<RiveFlareAnimationExample> {
               Icons.ac_unit,
               color: orangeColor,
             ),
-            label: 'Bird',
+            label: 'Bear',
           ),
           BottomNavigationBarItem(
             icon:Icon(
               Icons.girl,
               color: orangeColor,
             ),
-            label: 'Car',
+            label: 'Girl',
           ),
           BottomNavigationBarItem(
             icon:Icon(
               Icons.star,
               color: orangeColor,
             ),
-            label: 'Tiger',
+            label: 'Rating',
           ),
         ],
       ),
